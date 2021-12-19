@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% include 'include/head.html' %}
+    </head>
+    <body>
+       
+        {% include 'include/menu.html' %}
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Блог</h1>
+                            <p class="lead text-white-50 mb-4">мой личный блог</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <!-- Testimonials section-->
+        <section class="py-5 border-bottom">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Последние записи</h2>                
+				</div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+						{% for i in post_list %}
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="ms-4">
+                                        <p class="mb-1">{{ i[0]|safe }}</p>
+                                        <div class="small text-muted">{{ i[1] }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						{% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        {% include 'include/footer.html' %}
+    </body>
+</html>

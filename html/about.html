@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% include 'include/head.html' %}
+    </head>
+    <body>
+       
+        {% include 'include/menu.html' %}
+
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Обо мне</h1>
+                            <p class="lead text-white-50 mb-4">Готов учиться и работать</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#skill">Навыки</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="https://github.com/0Nera">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Portfolio section-->
+        <section class="bg-light py-5 border-bottom" id="skill">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Навыки и технологии</h2>
+                    <p class="lead mb-0">Я могу быть полезен</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <!-- Skill-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <h3>Языки и технологии</h3>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        C
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Python
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        HTML, CSS, JavaScript
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Linux
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Bash, CMD
+                                    </li>
+                                    <li class="mb-2 text-muted">
+                                        <i class="bi bi-x"></i>
+                                        Java (в процессе обучения)
+                                    </li>
+                                    <li class="mb-2 text-muted">
+                                        <i class="bi bi-x"></i>
+                                        C# (в процессе обучения)
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="https://github.com/0Nera?tab=repositories">Репозитории с примерами на Github</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <h3>Быстро и качественно</h3>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Всегда стараюсь выполнить задачу в срок
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Тестирую прежде чем сдать работу
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Стараюсь исправить все предупреждения компилятора
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Код в едином стиле
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="https://Synapse-os.github.io">Высокоскоросные проекты</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <h3>Эффективность и безопасность</h3>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Максимально оптимизирую код
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Использую логирование и обработку исключений
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Использую шифрование и проверенные СУБД
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Упаковка готового приложения и обфускация
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="https://Synapse-os.github.io">Проекты с защитой</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials section-->
+        <section class="py-5 border-bottom">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Участие в проектах</h2>
+                    <p class="lead mb-0">Написание кода, доработка, тестирование </p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="ms-4">
+                                        <h3>SynapseOS</h3>
+                                        <p class="mb-1">Главный разработчик и автор проекта.</p>
+                                        <div class="small text-muted">Исходный код: <a href="hhttps://github.com/Synapse-OS">SynapseOS</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="card mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="ms-4">
+                                        <h3>KolibriOS</h3>
+                                        <p class="mb-1">Написание кода, тестирование, использование.<br>Создал математический интерпритатор NeraMath, написал прототип игры KolibriRPG.</p>
+                                        <div class="small text-muted">Исходный код: <a href="https://github.com/0Nera/NeraMath">NeraMath</a> <a href="https://github.com/0Nera/KolibriRPG">KolibriRPG</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include 'include/footer.html' %}
+    </body>
+</html>
